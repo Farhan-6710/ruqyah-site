@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "question": "How can I watch product tutorials?",
+    "answer": {
+      "type": "video",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/embed/video1",
+          "title": "Product Tutorial 1"
+        },
+        {
+          "url": "https://www.youtube.com/embed/video2",
+          "title": "Product Tutorial 2"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "question": "What is your return policy?",
+    "answer": "You can return any item within 30 days of purchase for a full refund."
+  },
+  {
+    "id": 3,
+    "question": "How do I track my order?",
+    "answer": "Once your order has shipped, you will receive a tracking number via email."
+  },
+  {
+    "id": 4,
+    "question": "What payment methods do you accept?",
+    "answer": "We accept various payment methods including credit cards, PayPal, and bank transfers."
+  },
+  {
+    "id": 5,
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to many countries worldwide. Shipping costs may vary based on the destination."
+  },
+  {
+    "id": 6,
+    "question": "What should I do if I received a damaged item?",
+    "answer": "If you receive a damaged item, please contact our customer service within 7 days for a replacement or refund."
+  },
+  {
+    "id": 7,
+    "question": "How can I contact customer support?",
+    "answer": "You can reach our customer support team via email, phone, or through our contact form on the website."
+  }
+]
