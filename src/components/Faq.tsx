@@ -86,7 +86,7 @@ const Faq: React.FC = () => {
 
   return (
     <div className="bg-gradient-to-br from-cyan-100 via-white to-cyan-100 py-10">
-      <h2 className="my-4 text-center text-4xl font-semibold uppercase">
+      <h2 className="my-4 text-center text-4xl font-semibold uppercase text-emerald-800">
         Most Asked Questions
       </h2>
       <Accordion
@@ -98,12 +98,12 @@ const Faq: React.FC = () => {
           <AccordionItem
             key={faq.id}
             value={`item-${faq.id}`}
-            className={`transition-colors duration-200 ${"data-[state=open]:bg-gray-100 hover:bg-gray-100 duration-300"}`}
+            className={`transition-colors duration-200 ${"data-[state=open]:bg-cyan-100 hover:bg-cyan-100 duration-300"}`}
           >
-            <AccordionTrigger className="px-8 text-sm xs:text-lg sm:text-2xl">
+            <AccordionTrigger className="px-8 text-xl xs:text-lg sm:text-2xl text-left">
               {faq.question}
             </AccordionTrigger>
-            <AccordionContent className="px-8 sm:text-lg">
+            <AccordionContent className="px-8 text-lg sm:text-lg">
               {faq.answer}
             </AccordionContent>
           </AccordionItem>

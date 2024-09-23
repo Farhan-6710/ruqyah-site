@@ -2,13 +2,13 @@
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="container mx-auto p-8">
-      <h2 className="text-3xl font-bold mb-6">About Us</h2>
-
+    <div className="container mx-auto p-8 px-2 sm:px-8">
       {/* Combined Section: About Ruqyah and Our Approach */}
       <section className="flex flex-col xl:flex-row gap-4 md:gap-14 mb-8">
-        <div className="flex flex-col w-full xl:w-1/2">
-          <h3 className="text-2xl font-semibold mb-4">What is Ruqyah?</h3>
+        <div className="flex flex-col w-full xl:w-1/2 px-4">
+          <h3 className="text-3xl font-semibold mb-4">
+            What is <span className="text-emerald-800">Ruqyah</span>?
+          </h3>
           <p className="text-gray-700 mb-4">
             Ruqyah is an Islamic healing practice that involves reciting
             specific verses from the Quran to protect individuals from harmful
@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
             affected by spiritual ailments or negativity.
           </p>
           <h3 className="text-2xl font-semibold mb-4">
-            Our Approach to Ruqyah
+            Our Approach to <span className="text-emerald-800">Ruqyah</span>
           </h3>
           <p className="text-gray-700">
             Our dedicated team follows a compassionate and respectful approach

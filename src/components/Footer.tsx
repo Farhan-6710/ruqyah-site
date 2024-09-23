@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex gap-8 flex-col md:flex-row justify-between px-4">
         {/* Left Column */}
         <div className="flex flex-col mb-6 md:w-6/12">
-          <h2 className="text-4xl font-semibold mb-2">Logo Here</h2>
+          <h2 className="text-4xl font-semibold mb-6">Logo Here</h2>
           <p>
             We offer specialized Ruqyah services to help you find peace and
             healing through the power of the Quran. Our experienced
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         {/* Center Column */}
         <div className="flex flex-col mb-6 md:w-2/12">
           <h2 className="text-2xl font-semibold mb-2">Quick Links</h2>
-          <ul className="space-y-1 text-2xl">
+          <ul className="space-y-1 text-xl">
             <li>
               <a href="/" className="hover:underline">
                 Home
