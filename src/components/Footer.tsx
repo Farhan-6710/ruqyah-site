@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-emerald-600 text-white py-10">
+    <footer className="bg-gradient-to-br from-slate-950 to-emerald-800 text-white py-10">
       <div className="max-w-7xl mx-auto flex gap-8 flex-col md:flex-row justify-between px-4">
         {/* Left Column */}
         <div className="flex flex-col mb-6 md:w-6/12">
