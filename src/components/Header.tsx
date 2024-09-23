@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = () => {
         <Link href="/">FAQ&apos;S</Link>
         <Link href="/">Contact</Link>
         <Link href="/">
-          <button className="bg-white text-emerald-600 px-4 py-2 rounded-md hover:bg-gray-200 transition">
+          <button className="bg-white text-emerald-800 px-4 py-2 rounded-md hover:bg-gray-200 transition">
             Book an Appointment
           </button>
         </Link>

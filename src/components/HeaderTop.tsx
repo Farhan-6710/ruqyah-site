@@ -23,25 +23,25 @@ const HeaderTop: React.FC = () => {
         <div className="flex space-x-2">
           <a
             href="#"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-emerald-700 hover:bg-emerald-600"
+            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Facebook size={20} className="text-gray-100" />
           </a>
           <a
             href="#"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-emerald-700 hover:bg-emerald-600"
+            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Twitter size={20} className="text-gray-100" />
           </a>
           <a
             href="#"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-emerald-700 hover:bg-emerald-600"
+            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Instagram size={20} className="text-gray-100" />
           </a>
           <a
             href="#"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-emerald-700 hover:bg-emerald-600"
+            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Youtube size={20} className="text-gray-100" />
           </a>
