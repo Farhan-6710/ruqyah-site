@@ -65,11 +65,14 @@ const Header: React.FC<HeaderProps> = () => {
           <Link href="/" onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="/" onClick={toggleMenu}>
+          <Link href="/about" onClick={toggleMenu}>
             About
           </Link>
           <Link href="/" onClick={toggleMenu}>
             Faqs
+          </Link>
+          <Link href="/refference" onClick={toggleMenu}>
+            Refference
           </Link>
           <Link href="/" onClick={toggleMenu}>
             Contact
