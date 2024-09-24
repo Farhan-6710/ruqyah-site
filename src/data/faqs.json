@@ -18,32 +18,42 @@
   },
   {
     "id": 2,
-    "question": "What is your return policy?",
-    "answer": "You can return any item within 30 days of purchase for a full refund."
+    "question": "What is Ruqyah?",
+    "answer": "Ruqyah is the practice of reciting specific verses from the Quran to seek protection and healing from harmful entities, as mentioned in Surah Al-Isra (17:82): 'And We send down of the Qur'an that which is healing and mercy for the believers.'"
   },
   {
     "id": 3,
-    "question": "How do I track my order?",
-    "answer": "Once your order has shipped, you will receive a tracking number via email."
+    "question": "Is Ruqyah supported by Hadith?",
+    "answer": "Yes, there are several Hadiths that support Ruqyah. For instance, the Prophet Muhammad (peace be upon him) said, 'There is no harm in Ruqyah as long as it does not involve shirk' (Sunan Ibn Majah)."
   },
   {
     "id": 4,
-    "question": "What payment methods do you accept?",
-    "answer": "We accept various payment methods including credit cards, PayPal, and bank transfers."
+    "question": "Can Ruqyah be performed on oneself?",
+    "answer": "Yes, one can perform Ruqyah on themselves using Quranic verses such as Ayat al-Kursi (Surah Al-Baqarah, 2:255) for protection."
   },
   {
     "id": 5,
-    "question": "Do you ship internationally?",
-    "answer": "Yes, we ship to many countries worldwide. Shipping costs may vary based on the destination."
+    "question": "What are some recommended verses for Ruqyah?",
+    "answer": "Commonly recited verses include Surah Al-Fatiha, Surah Al-Baqarah (2:255), and Surah Al-Ikhlas, which are known for their protective qualities."
   },
   {
     "id": 6,
-    "question": "What should I do if I received a damaged item?",
-    "answer": "If you receive a damaged item, please contact our customer service within 7 days for a replacement or refund."
+    "question": "How often should I perform Ruqyah?",
+    "answer": "It is recommended to perform Ruqyah regularly, especially during times of distress or after experiencing negative events. The Prophet (peace be upon him) advised, 'Make Ruqyah a part of your daily routine.'"
   },
   {
     "id": 7,
-    "question": "How can I contact customer support?",
-    "answer": "You can reach our customer support team via email, phone, or through our contact form on the website."
+    "question": "Is there a specific time to perform Ruqyah?",
+    "answer": "While Ruqyah can be performed at any time, it is especially beneficial during the night, as stated in Surah Al-Isra (17:79): 'And during a portion of the night, pray with it as additional [worship] for you.'"
+  },
+  {
+    "id": 8,
+    "question": "Can I use Ruqyah for my family?",
+    "answer": "Yes, you can perform Ruqyah for your loved ones. The Prophet (peace be upon him) often recited Ruqyah for his family and companions, emphasizing the importance of seeking healing together."
+  },
+  {
+    "id": 9,
+    "question": "Are there any prohibited practices in Ruqyah?",
+    "answer": "Any practices that involve shirk (associating partners with Allah) or un-Islamic rituals are strictly prohibited in Ruqyah, as emphasized in the Hadith: 'Avoid all practices that do not conform to the teachings of Islam.'"
   }
 ]
