@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeaderProps {
   logoSrc: string;
@@ -19,16 +20,21 @@ const Header: React.FC<HeaderProps> = () => {
   };
 
   return (
-    <header className="flex items-center justify-between p-4 bg-gradient-to-r from-slate-950 to-emerald-800 shadow-lg px-6 sm:px-14">
+    <header className="flex items-center justify-between p-4 bg-gradient-to-r from-white to-emerald-900 border-b border-gray-200 px-6 sm:px-14">
       <div className="flex items-center">
-        <h2 className="text-3xl uppercase font-semibold text-white">
-          Logo Here
-        </h2>
+        <Image
+          src="/logo-horizontal.png"
+          alt="logo-image"
+          width={220} // Use one dimension
+          height={220} // Remove this line
+          style={{ height: "auto" }} // Maintain aspect ratio with CSS
+        />
       </div>
       <nav className="hidden md:flex justify-center items-center space-x-6 font-semibold uppercase text-white">
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
+        <Link href="/about">About</Link>
         <Link href="/">FAQ&apos;S</Link>
+        <Link href="/refference">Refference</Link>
         <Link href="/">Contact</Link>
         <Link href="/">
           <button className="bg-white text-emerald-800 px-4 py-2 rounded-md hover:bg-gray-200 transition">

@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "question": "How can I watch product tutorials?",
+    "question": "How do i listen to Ruqyah verses at Home",
     "answer": {
       "type": "video",
       "videos": [
         {
-          "url": "https://www.youtube.com/embed/video1",
+          "url": "https://www.youtube.com/embed/Fw_voxis4vQ?si=QkrNiEFnacrRm01G",
           "title": "Product Tutorial 1"
         },
         {
-          "url": "https://www.youtube.com/embed/video2",
+          "url": "https://www.youtube.com/embed/Fw_voxis4vQ?si=QkrNiEFnacrRm01G",
           "title": "Product Tutorial 2"
         }
       ]

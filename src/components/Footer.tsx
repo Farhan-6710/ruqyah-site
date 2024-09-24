@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -6,7 +7,15 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto flex gap-8 flex-col md:flex-row justify-between px-4">
         {/* Left Column */}
         <div className="flex flex-col mb-6 md:w-6/12">
-          <h2 className="text-4xl font-semibold mb-6">Logo Here</h2>
+          <div className="flex items-center mb-4">
+            <Image
+              src="/logo-horizontal-white.png"
+              alt="logo-image"
+              width={220} // Use one dimension
+              height={220} // Remove this line
+              style={{ height: "auto" }} // Maintain aspect ratio with CSS
+            />
+          </div>
           <p>
             We offer specialized Ruqyah services to help you find peace and
             healing through the power of the Quran. Our experienced
@@ -40,6 +49,11 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a href="/" className="hover:underline">
+                Refference
+              </a>
+            </li>
+            <li>
+              <a href="/" className="hover:underline">
                 Contact Us
               </a>
             </li>
@@ -59,6 +73,19 @@ const Footer: React.FC = () => {
             ></iframe>
           </div>
         </div>
+      </div>
+      <div className="copyright text-center p-4 py-0 text-white text-md tracking-wide">
+        <p>
+          Designed and developed by{" "}
+          <a
+            href="https://www.compumaxllc.com"
+            target="blank"
+            className="underline hover:text-gray-300"
+          >
+            CompumaxLLC
+          </a>
+          . All rights reserved © 2024.
+        </p>
       </div>
     </footer>
   );

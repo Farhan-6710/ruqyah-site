@@ -34,13 +34,15 @@ const HeaderTop: React.FC = () => {
             <Twitter size={20} className="text-gray-100" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/i.ruqya_hyd/?igsh=MXV6Y2VkMThxc2NpcA%3D%3D"
+            target="_blank"
             className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Instagram size={20} className="text-gray-100" />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@ilmspire_khair"
+            target="blank"
             className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Youtube size={20} className="text-gray-100" />

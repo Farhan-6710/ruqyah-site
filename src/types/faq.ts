@@ -1,6 +1,16 @@
 // src/types/faq.ts
+
+export type Video = {
+  url: string;
+  title: string;
+};
+
+export type Answer = 
+  | string 
+  | { type: "video"; videos: Video[] };
+
 export type FAQ = {
   id: number;
   question: string;
-  answer: string | JSX.Element; // Allow answer to be either a string or a JSX element
+  answer: Answer; // Updated to use the new Answer type
 };

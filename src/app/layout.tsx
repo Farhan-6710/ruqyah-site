@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import { Eczar } from "next/font/google"; // Importing the Eczar font
 import Head from "next/head";
 import "./globals.css";
+import HeaderTop from "@/components/HeaderTop";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,7 +44,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.className} ${geistMono.className} ${eczar.className} antialiased`}
       >
+        <HeaderTop />
+        <Header
+          logoSrc="/logo.png"
+          logoAlt="Logo"
+          logoWidth={150}
+          logoHeight={50}
+        />
         {children}
+        <Footer />
       </body>
     </html>
   );
