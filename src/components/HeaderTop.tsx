@@ -4,7 +4,6 @@
 
 import React from "react";
 import {
-  Phone,
   MapPin,
   Facebook,
   Twitter,
@@ -46,15 +45,6 @@ const HeaderTop: React.FC = () => {
             className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <Youtube size={20} className="text-gray-100" />
-          </a>
-        </div>
-        <div>
-          <a
-            href="tel:+1234567890"
-            className="flex items-center hover:text-gray-800 pl-2 sm:pl-10"
-          >
-            <Phone size={20} className="mr-2" />
-            234-567-890
           </a>
         </div>
       </div>

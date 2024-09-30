@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "question": "How do i listen to Ruqyah verses at Home",
+    "question": "How do I listen to Ruqyah verses at Home",
     "answer": {
       "type": "video",
       "videos": [
         {
           "url": "https://www.youtube.com/embed/Fw_voxis4vQ?si=QkrNiEFnacrRm01G",
-          "title": "Product Tutorial 1"
+          "title": "YouTube Video: Ruqyah Tutorial 1"
         },
         {
           "url": "https://www.youtube.com/embed/Fw_voxis4vQ?si=QkrNiEFnacrRm01G",
-          "title": "Product Tutorial 2"
+          "title": "YouTube Video: Ruqyah Tutorial 2"
         }
       ]
     }

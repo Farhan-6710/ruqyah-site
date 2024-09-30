@@ -1,3 +1,4 @@
+// app/layout.tsx (or pages/_app.tsx if applicable)
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Eczar } from "next/font/google"; // Importing the Eczar font
@@ -6,6 +7,7 @@ import "./globals.css";
 import HeaderTop from "@/components/HeaderTop";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import QueryClientProviderWrapper from "@/components/QueryClientProviderWrapper"; // Import your new component
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,15 +46,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.className} ${geistMono.className} ${eczar.className} antialiased`}
       >
-        <HeaderTop />
-        <Header
-          logoSrc="/logo.png"
-          logoAlt="Logo"
-          logoWidth={150}
-          logoHeight={50}
-        />
-        {children}
-        <Footer />
+        <QueryClientProviderWrapper>
+          <HeaderTop />
+          <Header />
+          {children}
+          <Footer />
+        </QueryClientProviderWrapper>
       </body>
     </html>
   );

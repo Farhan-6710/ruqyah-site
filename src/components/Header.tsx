@@ -4,15 +4,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-interface HeaderProps {
-  logoSrc: string;
-  logoAlt: string;
-  logoWidth: number;
-  logoHeight: number;
-}
-
-const Header: React.FC<HeaderProps> = () => {
+ 
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,27 +13,22 @@ const Header: React.FC<HeaderProps> = () => {
   };
 
   return (
-    <header className="flex items-center justify-between p-4 bg-gradient-to-r from-white to-emerald-900 border-b border-gray-200 px-6 sm:px-14">
+    <header className="flex flex-row md:flex-col md:gap-4 items-center justify-between p-4 bg-gradient-to-r from-white to-emerald-900 border-b border-gray-200 px-6 sm:px-14">
       <div className="flex items-center">
         <Image
-          src="/logo-horizontal.png"
+          src="/logo-new.png"
           alt="logo-image"
-          width={220} // Use one dimension
-          height={220} // Remove this line
+          className="w-24 md:w-44" // Use responsive width classes
+          width={180} // This can be kept for non-responsive scenarios
+          height={180} // This can be kept for non-responsive scenarios
           style={{ height: "auto" }} // Maintain aspect ratio with CSS
         />
       </div>
       <nav className="hidden md:flex justify-center items-center space-x-6 font-semibold uppercase text-white">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/">FAQ&apos;S</Link>
+        <Link href="/faq">FAQ&apos;S</Link>
         <Link href="/refference">Refference</Link>
-        <Link href="/">Contact</Link>
-        <Link href="/">
-          <button className="bg-white text-emerald-800 px-4 py-2 rounded-md hover:bg-gray-200 transition">
-            Book an Appointment
-          </button>
-        </Link>
       </nav>
       <button
         className="md:hidden p-2 text-white"
@@ -68,22 +56,11 @@ const Header: React.FC<HeaderProps> = () => {
           <Link href="/about" onClick={toggleMenu}>
             About
           </Link>
-          <Link href="/" onClick={toggleMenu}>
+          <Link href="/faq" onClick={toggleMenu}>
             Faqs
           </Link>
           <Link href="/refference" onClick={toggleMenu}>
             Refference
-          </Link>
-          <Link href="/" onClick={toggleMenu}>
-            Contact
-          </Link>
-          <Link href="/">
-            <button
-              className="bg-gradient-to-br from-slate-950 to-emerald-600 text-white px-4 py-2 rounded-md hover:bg-emerald-700 transition"
-              onClick={toggleMenu}
-            >
-              Book an Appointment
-            </button>
           </Link>
         </nav>
       </div>
