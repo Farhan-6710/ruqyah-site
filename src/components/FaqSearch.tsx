@@ -27,7 +27,7 @@ const FaqSearch: React.FC<FaqSearchProps> = ({ onSearch }) => {
         value={searchTerm}
         onChange={handleSearchChange}
         placeholder="Search FAQs..."
-        className="w-full p-2 border rounded pr-10 pl-8" // Add padding for the left icon
+        className="w-full p-2 border rounded pr-10 pl-8 focus:border-gray-500 focus:outline-none focus:ring-0" // Add padding for the left icon
       />
       <X
         className="absolute right-14 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer"
