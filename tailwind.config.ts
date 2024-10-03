@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		backgroundImage: {
+        'emerald-gradient': 'linear-gradient(90deg, #065F46, #d2eedd, #065F46);',
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

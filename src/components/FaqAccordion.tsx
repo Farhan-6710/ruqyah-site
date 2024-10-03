@@ -1,6 +1,4 @@
-// FaqAccordion.tsx
-
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -14,6 +12,18 @@ interface FaqAccordionProps {
 }
 
 const FaqAccordion: React.FC<FaqAccordionProps> = ({ faqs }) => {
+  // Load the Instagram embed script
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <Accordion
       type="single"
@@ -41,12 +51,23 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ faqs }) => {
                         key={index}
                         className="aspect-video w-full md:w-1/2 p-2"
                       >
-                        <iframe
-                          src={video.url}
-                          title={video.title}
-                          className="w-full h-full"
-                          allowFullScreen
-                        ></iframe>
+                        {index === 0 ? (
+                          // YouTube video
+                          <iframe
+                            src={video.url}
+                            title={video.title}
+                            className="w-full h-full"
+                            allowFullScreen
+                          ></iframe>
+                        ) : (
+                          // Instagram video
+                          <iframe
+                            src={video.url}
+                            title={video.title}
+                            className="w-full h-full"
+                            allowFullScreen
+                          ></iframe>
+                        )}
                       </div>
                     ))}
                   </div>

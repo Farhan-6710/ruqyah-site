@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="flex flex-row md:flex-col md:gap-4 items-center justify-between p-4 bg-gradient-to-r from-white to-emerald-900 border-b border-gray-200 px-6 sm:px-14">
+    <header className="flex flex-row md:flex-col md:gap-4 items-center justify-between p-4 bg-gradient-to-r from-emerald-50 to-emerald-900 md:bg-emerald-gradient border-b border-gray-200 px-6 sm:px-14">
       <div className="flex items-center">
         <Image
           src="/logo-new.png"
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           style={{ height: "auto" }} // Maintain aspect ratio with CSS
         />
       </div>
-      <nav className="hidden md:flex justify-center items-center space-x-6 font-semibold uppercase text-white">
+      <nav className="hidden md:flex justify-center items-center space-x-6 font-semibold uppercase text-slate-950">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/faq">FAQ&apos;S</Link>
