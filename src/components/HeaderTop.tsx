@@ -5,8 +5,6 @@
 import React from "react";
 import {
   MapPin,
-  Facebook,
-  Twitter,
   Instagram,
   Youtube,
 } from "lucide-react";
@@ -21,29 +19,19 @@ const HeaderTop: React.FC = () => {
       <div className="flex justify-center items-center space-x-2 w-full md:w-auto">
         <div className="flex space-x-2">
           <a
-            href="#"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
-          >
-            <Facebook size={20} className="text-gray-100" />
-          </a>
-          <a
-            href="#"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
-          >
-            <Twitter size={20} className="text-gray-100" />
-          </a>
-          <a
             href="https://www.instagram.com/i.ruqya_hyd/?igsh=MXV6Y2VkMThxc2NpcA%3D%3D"
             target="_blank"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
+            className="flex gap-2 hover:text-gray-800 border p-2 px-4 rounded-lg bg-slate-800 hover:bg-logo-green duration-200"
           >
+            <h1 className="text-white">Instagram</h1>
             <Instagram size={20} className="text-gray-100" />
           </a>
           <a
             href="https://www.youtube.com/@ilmspire_khair"
             target="blank"
-            className="hover:text-gray-800 border p-2 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
+            className="flex gap-2 hover:text-gray-800 border p-2 px-4 rounded-lg bg-slate-800 hover:bg-logo-green duration-200"
           >
+            <h1 className="text-white">Youtube</h1>
             <Youtube size={20} className="text-gray-100" />
           </a>
         </div>

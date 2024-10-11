@@ -50,7 +50,7 @@ const Faq: React.FC = () => {
   const displayFaqs = filteredFaqs.length > 0 ? filteredFaqs : faqs || [];
 
   return (
-    <div className="bg-gradient-to-br from-cyan-100 via-white to-cyan-100 py-10">
+    <div className="bg-white py-10">
       <h2 className="my-4 text-center text-4xl font-semibold uppercase text-emerald-800">
         Most Asked Questions
       </h2>

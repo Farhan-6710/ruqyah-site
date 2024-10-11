@@ -1,7 +1,6 @@
 // app/layout.tsx (or pages/_app.tsx if applicable)
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Eczar } from "next/font/google"; // Importing the Eczar font
 import Head from "next/head";
 import "./globals.css";
 import HeaderTop from "@/components/HeaderTop";
@@ -16,12 +15,6 @@ const geistSans = localFont({
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   weight: "100 900",
-});
-
-// Initialize Eczar font with desired styles
-const eczar = Eczar({
-  subsets: ["latin"],
-  weight: ["400", "700"], // Specify the weights you want to use
 });
 
 export const metadata: Metadata = {
@@ -44,7 +37,8 @@ export default function RootLayout({
         {/* Add any other meta tags or links here */}
       </Head>
       <body
-        className={`${geistSans.className} ${geistMono.className} ${eczar.className} antialiased`}
+        className={`${geistSans.className} ${geistMono.className} antialiased`}
+        style={{ fontFamily: "'Bookman Old Style', serif" }} // Set the font to Bookman Old Style
       >
         <QueryClientProviderWrapper>
           <HeaderTop />
