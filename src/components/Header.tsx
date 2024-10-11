@@ -1,10 +1,9 @@
 "use client";
-// components/Header.tsx
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
- 
+
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,8 +11,16 @@ const Header: React.FC = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isMenuOpen]);
+
   return (
-    <header className="flex flex-row md:flex-col md:gap-4 items-center justify-between p-4 bg-gradient-to-r from-emerald-50 to-emerald-900 md:bg-emerald-gradient border-b border-gray-200 px-6 sm:px-14">
+    <header className="flex    flex-row md:flex-col md:gap-4 items-center justify-between p-4 bg-gradient-to-r from-emerald-50 to-emerald-900 md:bg-emerald-gradient border-b border-gray-200 px-6 sm:px-14">
       <div className="flex items-center">
         <Image
           src="/logo-new.png"
@@ -57,7 +64,7 @@ const Header: React.FC = () => {
             About
           </Link>
           <Link href="/faq" onClick={toggleMenu}>
-            Faqs
+            FAQs
           </Link>
           <Link href="/refference" onClick={toggleMenu}>
             Refference
