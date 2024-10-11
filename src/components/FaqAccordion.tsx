@@ -34,7 +34,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ faqs }) => {
         <AccordionItem
           key={faq.id}
           value={`item-${faq.id}`}
-          className={`transition-colors duration-200 ${"data-[state=open]:bg-emerald-800 data-[state=open]:text-white duration-300"}`}
+          className="data-[state=open]:bg-emerald-700 data-[state=open]:text-white hover:bg-emerald-700 hover:text-white"
         >
           <AccordionTrigger className="px-8 text-xl xs:text-lg sm:text-2xl text-left">
             {faq.question}
