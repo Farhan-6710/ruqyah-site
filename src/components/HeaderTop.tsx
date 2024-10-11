@@ -21,7 +21,7 @@ const HeaderTop: React.FC = () => {
           <a
             href="https://www.instagram.com/i.ruqya_hyd/?igsh=MXV6Y2VkMThxc2NpcA%3D%3D"
             target="_blank"
-            className="flex gap-2 hover:text-gray-800 border p-2 px-4 rounded-lg bg-slate-800 hover:bg-logo-green duration-200"
+            className="flex gap-2 hover:text-gray-800 border p-2 px-4 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <h1 className="text-white">Instagram</h1>
             <Instagram size={20} className="text-gray-100" />
@@ -29,7 +29,7 @@ const HeaderTop: React.FC = () => {
           <a
             href="https://www.youtube.com/@ilmspire_khair"
             target="blank"
-            className="flex gap-2 hover:text-gray-800 border p-2 px-4 rounded-lg bg-slate-800 hover:bg-logo-green duration-200"
+            className="flex gap-2 hover:text-gray-800 border p-2 px-4 rounded-lg bg-slate-800 hover:bg-emerald-800 duration-200"
           >
             <h1 className="text-white">Youtube</h1>
             <Youtube size={20} className="text-gray-100" />
