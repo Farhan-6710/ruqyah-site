@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         } transition-transform duration-300`}
       >
         <button
-          className="absolute top-4 right-4 text-2xl lowercase font-thin"
+          className="absolute top-4 right-4 text-5xl lowercase font-thin"
           onClick={toggleMenu}
           aria-label="Close Menu"
         >
