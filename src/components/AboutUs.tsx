@@ -41,7 +41,7 @@ const AboutUs: React.FC = () => {
         </div>
       </section>
       <section>
-        <div className="container mx-auto p-4 px-4">
+        <div className="container mx-auto p-4 pt-0 px-4">
           <h3 className="text-3xl font-semibold mb-4">
             Why a <span className="text-emerald-800">website</span>?
           </h3>
@@ -67,7 +67,7 @@ const AboutUs: React.FC = () => {
             while steering clear of all forms of deviation and shirk.
           </p>
         </div>
-        <div className="container mx-auto p-4 px-4">
+        <div className="container mx-auto p-4 pt-0 px-4">
           <h3 className="text-3xl font-semibold mb-4">
             The <span className="text-emerald-800">Lead</span>
           </h3>
@@ -82,7 +82,7 @@ const AboutUs: React.FC = () => {
             that their efforts continue to benefit and uplift many more.
           </p>
         </div>
-        <div className="container mx-auto p-4 px-4">
+        <div className="container mx-auto p-4 pt-0 px-4">
           <h3 className="text-3xl font-semibold mb-4">
             Our <span className="text-emerald-800">Mission</span>
           </h3>
@@ -94,7 +94,7 @@ const AboutUs: React.FC = () => {
             with the path set by the Prophet Muhammad (Peace be upon him).
           </p>
         </div>
-        <div className="container mx-auto p-4 px-4">
+        <div className="container mx-auto p-4 pt-0 px-4">
           <h3 className="text-3xl font-semibold mb-4">
             Divine Guidance on
             <span className="text-emerald-800"> Healing</span>
